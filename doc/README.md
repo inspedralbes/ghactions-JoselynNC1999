@@ -1,19 +1,19 @@
-# Documentació
-Llistat d'alguns dels punts que han de quedar explicats en aquesta carpeta. Poden ser tots en aquest fitxer o en diversos fitxers enllaçats.
+# 📘 Documentació del Projecte
 
-És obligatori modificar aquest document!!
+## ✅ Objectius
+Aplicació per [objectiu resumit: gestionar usuaris, reserves, etc.].
 
-## Documentació bàsica MÍNIMA
- * Objectius
- * Arquitectura bàsica
-   * Tecnologies utilitzades
-   * Interrelació entre els diversos components
- * Com crees l'entorn de desenvolupament
- * Com desplegues l'aplicació a producció
- * Llistat d'endpoints de l'API de backend
-    * Rutes
-   * Exemples de JSON de peticó
-   * Exemples de JSON de resposta i els seus codis d'estat 200? 404?
- * Aplicació Android
- * Altres elements importants.
- * ...
+## 🏗️ Arquitectura
+- **Backend:** Node.js + Express (o el que sigui)
+- **DB:** PostgreSQL / MongoDB
+- **Android:** Kotlin amb Retrofit
+- **Altres:** Git, Docker, Postman
+
+## ⚙️ Entorn de desenvolupament
+```bash
+git clone https://github.com/usuari/projecte.git
+cd projecte
+cp .env.example .env
+npm install
+npm run dev
+Aquesta es una prova de git actions....
