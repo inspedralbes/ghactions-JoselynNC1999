@@ -16,8 +16,8 @@ jobs:
       - name: Deploy via SSH
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  # Aquests són els secrets
-          REMOTE_USER: ${{ secrets.SSH_USERNAME }}
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          TARGET: '/web/a23josnincal.daw.inspedralbes.cat/public_html'  # Ruta al servidor
-          SOURCE: '.'  # Font (on estan els fitxers)
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}  # La clau privada SSH
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}         # Usuari SSH
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}         # IP o domini del servidor
+          TARGET: ${{ secrets.TARGET }}                   # Ruta al servidor
+          SOURCE: '.'                                     # Directori local a desplegar
