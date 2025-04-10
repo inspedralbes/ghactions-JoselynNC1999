@@ -19,6 +19,6 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_USER: ${{ secrets.SSH_USERNAME }}
         REMOTE_HOST: ${{ secrets.SSH_HOST }}
-        TARGET: ${{ secrets.TARGET_PATH }}
+        TARGET: '/web/a23josnincal.daw.inspedralbes.cat/public_html'  # Aquesta és la ruta correcta
         SOURCE: .
 
