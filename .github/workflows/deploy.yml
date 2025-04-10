@@ -16,8 +16,8 @@ jobs:
       - name: Deploy via SSH
         uses: easingthemes/ssh-deploy@v2.1.5
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          remote-user: ${{ secrets.SSH_USERNAME }}
-          server-ip: ${{ secrets.SSH_HOST }}
-          remote-path: ${{ secrets.TARGET_PATH }}
-          local-path: .
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ${{ secrets.SSH_USERNAME }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          TARGET: ${{ secrets.TARGET_PATH }}
+          SOURCE: calculadora-vue/dist
